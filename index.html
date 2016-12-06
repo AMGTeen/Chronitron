@@ -23,12 +23,33 @@
         margin-top: 20px;
         font-size: 20px; 
       }
+      .notice {
+         padding: 15px;
+         background: #dddddd;
+         border-radius: 4px;
+         border: 1px solid #cccccc;
+         margin-bottom: 15px;
+      }
+      div.body {
+        margin: 20px auto;
+        max-width: 800px;
+      }
+      input {
+        padding: 15px;
+        border-radius: 4px;
+        border: 1px solid #cccccc;
+      }
     </style>
+    <script src="https://use.fontawesome.com/f5072274e8.js"></script>
   </head>
   <body>
     <div class="header">
       <h1>Chronitron</h1>
       <div class="subtitle">Web-based Chatterbot</div>
+    </div>
+    <div class="body">
+      <div class="notice">It doesn't do anything right now!</div>
+      <input type="text" placeholder="Say something...">
     </div>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="chronitron.js"></script>
