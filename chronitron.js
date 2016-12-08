@@ -11,10 +11,10 @@ $(document).ready(function() {
 
 function displayUserContent() {
   // When user presses ENTER, add <div class="input"> with text.
-  $('.history').append('<div class="input">' + $('input').val() + '</div>'); // Add new <div class="input">
+  $('.history').append('<div class="input">' + $('input').val("hi") + '</div>'); // Add new <div class="input">
   $('input').val(''); // Clear input field
 }
 
 function parse() {
-  // Parse user input
+  
 }
