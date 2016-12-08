@@ -9,6 +9,8 @@ $(document).ready(function() {
 
 // IGNORE ALL ABOVE THIS LINE
 
+document.getElementById("Submit").onclick = parse();
+
 function displayUserContent() {
   // When user presses ENTER, add <div class="input"> with text.
   $('.history').append('<div class="input">' + $('input').val("hi") + '</div>'); // Add new <div class="input">
@@ -16,5 +18,5 @@ function displayUserContent() {
 }
 
 function parse() {
-  
+  alert("Button");
 }
