@@ -9,7 +9,7 @@
 
 // IGNORE ALL ABOVE THIS LINE
 
-document.getElementById("Submit").onclick = parse();
+document.getElementById("Submit").onclick = parse;
 
 //
 //function displayUserContent() {
