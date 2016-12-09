@@ -10,15 +10,11 @@
 
 $("#submit").click(parse);
 
-//
-//function displayUserContent() {
-// When user presses ENTER, add <div class="input"> with text.
-//  $('.history').append('<div class="input">' + $('input').val("hi") + '</div>'); // Add new <div class="input">
-//  $('input').val(''); // Clear input field
-//}
-
 function parse() {
-  alert("Parsing");
+  $('.history').prepend('<div class="input">' + $('#input').val() + '</div>'); // When you say something, add it to the chat
+  $('#input').val('');
+  
+  // then... parse and reply
 }
 
 $(document).keypress(function(e) { // Press ENTER to submit
@@ -28,5 +24,3 @@ $(document).keypress(function(e) { // Press ENTER to submit
         $('#input').focus();
     }
 });
-$('.history').prepend('<div class="input">' + $('#input').val() + '</div>'); // When you say something, add it to the chat
-$('#input').val('');
