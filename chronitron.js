@@ -20,3 +20,9 @@ $("#submit").click(parse);
 function parse() {
   alert("Parsing");
 }
+
+$(document).keypress(function(e) { // Press ENTER to submit
+    if(e.which == 13) {
+        alert('You pressed enter');
+    }
+});
