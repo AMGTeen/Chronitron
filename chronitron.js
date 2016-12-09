@@ -21,10 +21,12 @@ function parse() {
   alert("Parsing");
 }
 
-// $(document).keypress(function(e) { // Press ENTER to submit
-//     if(e.which == 13) {
-//         alert('You pressed enter');
-//     }
-// });
+$(document).keypress(function(e) { // Press ENTER to submit
+    if(e.which == 13) {
+        parse();
+    } else {
+        $('input').focus();
+    }
+});
 $('.history').prepend('<div class="input">' + $('input').text() + '</div>'); // When you say something, add it to the chat
 $('.input').val('');
