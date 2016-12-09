@@ -21,9 +21,10 @@ function parse() {
   alert("Parsing");
 }
 
-$(document).keypress(function(e) { // Press ENTER to submit
-    if(e.which == 13) {
-        alert('You pressed enter');
-    }
-});
-$('.history').prepend('<div class="input">' + $('input').val() + '</div>'); // When you say something, add it to the chat
+// $(document).keypress(function(e) { // Press ENTER to submit
+//     if(e.which == 13) {
+//         alert('You pressed enter');
+//     }
+// });
+$('.history').prepend('<div class="input">' + $('input').text() + '</div>'); // When you say something, add it to the chat
+$('.input').val('');
