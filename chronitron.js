@@ -26,3 +26,4 @@ $(document).keypress(function(e) { // Press ENTER to submit
         alert('You pressed enter');
     }
 });
+$('.history').prepend('<div class="input">' + $('input').val() + '</div>'); // When you say something, add it to the chat
