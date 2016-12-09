@@ -2,14 +2,13 @@
 // Chronitron.js
 // Uses jQuery, but you can use vanilla JS if you like.
 //
-//Sorry... just testing something.
 //$(document).ready(function() {
 //  $('input').focus(); // Focus the input field
 //});
 
 // IGNORE ALL ABOVE THIS LINE
 
-document.getElementById("Submit").onclick = parse;
+$("#submit").onclick = parse;
 
 //
 //function displayUserContent() {
@@ -19,5 +18,5 @@ document.getElementById("Submit").onclick = parse;
 //}
 
 function parse() {
-  alert("Button");
+  alert("Parsing");
 }
