@@ -8,7 +8,7 @@
 
 // IGNORE ALL ABOVE THIS LINE
 
-$("#submit").onclick(parse);
+$("#submit").click(parse);
 
 //
 //function displayUserContent() {
