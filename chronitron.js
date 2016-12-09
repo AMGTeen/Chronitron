@@ -20,7 +20,5 @@ function parse() {
 $(document).keypress(function(e) { // Press ENTER to submit
     if(e.which == 13) {
         parse();
-    } else {
-        $('#input').focus();
-    }
+    } 
 });
