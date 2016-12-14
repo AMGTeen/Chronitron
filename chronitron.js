@@ -12,9 +12,9 @@
 $("#submit").click(parse);
 
 function parse() {
-  $('.history').prepend('<div class="input">' + $('#input').val() + '</div>'); // When you say something, add it to the chat
+  $('.history').prepend('<div class="input">' + $('#input').val("hi") + '</div>'); // When you say something, add it to the chat
   $('#input').val('');
-  return "hi"
+  
   // then... parse and reply
 }
 
