@@ -14,7 +14,7 @@ $("#submit").click(parse);
 function parse() {
   $('.history').prepend('<div class="input">' + $('#input').val() + '</div>'); // When you say something, add it to the chat
   var text = "hi"
-  $('#input').val();
+  $('#input').val(text);
   
   // then... parse and reply
 }
