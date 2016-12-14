@@ -1,3 +1,4 @@
+
 //
 // Chronitron.js
 // Uses jQuery, but you can use vanilla JS if you like.
@@ -13,7 +14,7 @@ $("#submit").click(parse);
 function parse() {
   $('.history').prepend('<div class="input">' + $('#input').val() + '</div>'); // When you say something, add it to the chat
   $('#input').val('');
-  
+  return "hi"
   // then... parse and reply
 }
 
