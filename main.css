@@ -1,0 +1,31 @@
+body {
+  margin: 0px;
+  padding: 20px 0px;
+  background: #eee;
+  line-height: 1.6;
+  font-family: sans-serif;
+  font-weight: 300;
+  max-width: 500px;
+  margin: auto;
+}
+.header {
+  font-size: 30px;
+  font-weight: bold;
+}
+input {
+  padding: 10px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 20px 0px;
+}
+div.you {
+  text-align: right;
+}
+div.them {
+  text-align: left;
+}
+div.history {
+  
+}

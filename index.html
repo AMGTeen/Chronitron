@@ -1,115 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Chronitron &ndash; AMGTeen</title>
-    <link rel="shortcut icon" href="icon.png">
-    <meta name="keywords" content="Chatbot, Chatterbot, Alamance Makers Guild, Alamance, Makers, Guild, AMG, Teen, Youth, Teen Youth Branch">
-    <meta name="author" content="AMG Teen Branch">
     <meta charset="utf-8">
-    <style>
-      @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,700,700i');
-      body {
-        margin: 0px;
-        font-family: "Ubuntu", sans-serif;
-      }
-      div.header {
-        text-align: center;
-        color: #333333;
-        padding: 50px;
-        background: #dddddd;
-      }
-      .header h1 {
-        font-size: 40px;
-        margin: 0px;
-      }
-      .header .subtitle {
-        margin-top: 20px;
-        font-size: 20px; 
-      }
-      .notice {
-         padding: 15px;
-         background: #dddddd;
-         border-radius: 4px;
-         border: 1px solid #cccccc;
-         margin-bottom: 15px;
-       }
-      div.body {
-        margin: 20px auto;
-        max-width: 700px;
-      }
-      input[type=text] {
-        padding: 15px;
-        border-radius: 4px;
-        border: 1px solid #cccccc;
-        font-size: 16px;
-        display: inline-block;
-        width: 350px;
-      }
-      .output {
-        margin-top: 15px;
-        text-align: left;
-        color: #333333;
-      }
-      .input {
-        margin-top: 15px;
-        text-align: right;
-        color: black;
-      }
-      .history {
-        height: 400px;
-        overflow-y: scroll;
-        padding-top: 20px;
-      }
-      input[type=submit] {
-        margin-left: 20px;
-        padding: 15px;
-        border-radius: 4px;
-        border: 1px solid #cccccc;
-        font-size: 16px;
-        color: #333333;
-        cursor: pointer;
-      }
-      .buttons {
-        
-      }
-    </style>
-    <script src="https://use.fontawesome.com/f5072274e8.js"></script>
+    <title>Chronitron</title>
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <div class="header">
-      <h1>Chronitron</h1>
-      <div class="subtitle">Interactive Web-based Chatterbot Written in JavaScript</div>
+      Chronitron
     </div>
-    <div class="body">
-      <div class="buttons">
-        <input type="text" placeholder="Say something..."><input type="submit" value="Submit" id="submit">
-      </div>
-      <div class="history">
-        <div class="input">Test User Text</div>
-        <div class="output">Test Chronitron Response</div>
-        <div class="input">Test User Text</div>
-        <div class="output">Test Chronitron Response</div>
-        <div class="input">Test User Text</div>
-        <div class="output">Test Chronitron Response</div>
-        <div class="input">Test User Text</div>
-        <div class="output">Test Chronitron Response</div>
-        <div class="input">Test User Text</div>
-        <div class="output">Test Chronitron Response</div>
-        <div class="input">Test User Text</div>
-        <div class="output">Test Chronitron Response</div>
-        <div class="input">Test User Text</div>
-        <div class="output">Test Chronitron Response</div>
-        <div class="input">Test User Text</div>
-        <div class="output">Test Chronitron Response</div>
-        <div class="input">Test User Text</div>
-        <div class="output">Test Chronitron Response</div>
-        <div class="input">Test User Text</div>
-        <div class="output">Test Chronitron Response</div>
-        <div class="input">Test User Text</div>
-        <div class="output">Test Chronitron Response</div>
-      </div>
+    <div class="talk">
+      <input class="type">
     </div>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <div class="history">
+      
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="chronitron.js"></script>
   </body>
 </html>
