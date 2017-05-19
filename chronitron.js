@@ -46,6 +46,7 @@ function parse(input) {
     'whattime':[getTime()],
     'time':[getTime()],
     'cool':['👍'],
+    'google':[window.open("google.com")],
     'chronitron':['Did you say my name?','Yes?','Hello!','Did you say my name?','Cool name right 😏'],
     'heychronitron':['Yes?','Hello!'],
     'guesswhat':['What!!','What?','I am litttterally on the edge of my seat','What is it?','Yes?'],
