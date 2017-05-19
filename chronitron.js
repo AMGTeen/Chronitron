@@ -17,7 +17,9 @@ $('.type').keypress(function() {
     $('.history').prepend('<div class="them">' + output + '</div>');
   }
 });
-
+function getTime() {
+  return new Date($.now());
+}
 function parse(input) {
   text = input.toLowerCase();
   text = text.replace(/[.,\ \'\/#!$%\^&\*;:{}?=\-_`~()]/g,"");
@@ -32,6 +34,10 @@ function parse(input) {
     'whats up':['Not much!','Just sitting here waiting for you to type something ;)','Haha not much','Talking to you! :)','THE SKY','The Sky ;)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
     'wassup':['Not much!','Just sitting here waiting for you to type something ;)','Haha not much','Talking to you! :)','THE SKY','The Sky ;)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
     'suh':['Just sitting here waiting for you to type something ;)','Suh to you bro','Haha not much','Talking to you! :)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
+    'whatsthetime':[getTime()],
+    'whattimeisit':[getTime()],
+    'whattime':[getTime()],
+    'time':[getTime()],
   }
   for(var i = 0;i < Object.keys(replacements).length; i++) {
     var index = Object.keys(replacements)[i];
