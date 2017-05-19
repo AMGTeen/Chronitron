@@ -23,15 +23,21 @@ function getTime() {
 function parse(input) {
   text = input.toLowerCase();
   text = text.replace(/[.,\ \'\/#!$%\^&\*;:{}?=\-_`~()]/g,"");
+  var help = 'Need help? <a href="https://github.com/AMGTeen/Chronitron/blob/master/README.md#current-features">Click here</a> see what I can do. If you\'re a programmer, check out the <a href="https://raw.githubusercontent.com/AMGTeen/Chronitron/master/chronitron.js">source code</a>!',
+  hey = ['Hey','Hello','Yo','Hey!','Hello!','Yo!','Heya','Hey There','Heyyy','What\'s up?','Eyy','Ayy','Hello there!'];
+
   var replacements = {
-    'hello':['Hey','Hello','Yo','Hey!','Hello!','Yo!','Heya','Hey There','Heyyy','What\'s up?','Eyy','Ayy','Hello there!'],
-    'hey':['Hey','Hello','Yo','Hey!','Hello!','Yo!','Heya','Hey There','Heyyy','What\'s up?','Eyy','Ayy','Hello there!'],
-    'yo':['Hey','Hello','Yo','Hey!','Hello!','Yo!','Heya','Hey There','Heyyy','What\'s up?','Eyy','Ayy','Hello there!'],
-    'heya':['Hey','Hello','Yo','Hey!','Hello!','Yo!','Heya','Hey There','Heyyy','What\'s up?','Eyy','Ayy','Hello there!'],
-    'hello there':['Hey','Hello','Yo','Hey!','Hello!','Yo!','Heya','Hey There','Heyyy','What\'s up?','Eyy','Ayy','Hello there!'],
+    'hello':hey,
+    'hey':hey,
+    'yo':hey,
+    'heya':hey,
+    'hello there':hey,
     'hi':['Hey','Hello','Yo','Hey!','Hello!','Yo!','Heya','Hi!'],
     'whatsup':['Not much!','Just sitting here waiting for you to type something ;)','Haha not much','Talking to you! :)','THE SKY','The Sky ;)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
     'wassup':['Not much!','Just sitting here waiting for you to type something ;)','Haha not much','Talking to you! :)','THE SKY','The Sky ;)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
+    'wazzup':['Not much!','Just sitting here waiting for you to type something ;)','Haha not much','Talking to you! :)','THE SKY','The Sky ;)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
+    'heywhatsup':['Not much!','Just sitting here waiting for you to type something ;)','Haha not much','Talking to you! :)','THE SKY','The Sky ;)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
+    'whatshappening':['Not much!','Just sitting here waiting for you to type something ;)','Haha not much','Talking to you! :)','THE SKY','The Sky ;)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
     'suh':['Just sitting here waiting for you to type something 😉','Suh to you bro','Haha not much','Talking to you! :)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
     'howareyou':['Fine!','Great!','Good.','Awesome!','OK','Doing good, how about you?'],
     'howareyou':['Fine!','Great!','Good.','Awesome!','OK','Doing good, how about you?'],
@@ -43,11 +49,11 @@ function parse(input) {
     'chronitron':['Did you say my name?','Yes?','Hello!','Did you say my name?','Cool name right 😏'],
     'heychronitron':['Yes?','Hello!'],
     'guesswhat':['What!!','What?','I am litttterally on the edge of my seat','What is it?','Yes?'],
-    'help':['Need help? <a href="https://github.com/AMGTeen/Chronitron/blob/master/README.md#current-features">Click here</a> see what I can do. If you\'re a programmer, check out the <a href="https://raw.githubusercontent.com/AMGTeen/Chronitron/master/chronitron.js">source code</a>!'],
-    'ineedhelp':['Need help? <a href="https://github.com/AMGTeen/Chronitron/blob/master/README.md#current-features">Click here</a> see what I can do. If you\'re a programmer, check out the <a href="https://raw.githubusercontent.com/AMGTeen/Chronitron/master/chronitron.js">source code</a>!'],
-    'helpme':['Need help? <a href="https://github.com/AMGTeen/Chronitron/blob/master/README.md#current-features">Click here</a> see what I can do. If you\'re a programmer, check out the <a href="https://raw.githubusercontent.com/AMGTeen/Chronitron/master/chronitron.js">source code</a>!'],
-    'howdoiusethis':['Need help? <a href="https://github.com/AMGTeen/Chronitron/blob/master/README.md#current-features">Click here</a> see what I can do. If you\'re a programmer, check out the <a href="https://raw.githubusercontent.com/AMGTeen/Chronitron/master/chronitron.js">source code</a>!'],
-    'howamisupposedtousethis':['Need help? <a href="https://github.com/AMGTeen/Chronitron/blob/master/README.md#current-features">Click here</a> see what I can do. If you\'re a programmer, check out the <a href="https://raw.githubusercontent.com/AMGTeen/Chronitron/master/chronitron.js">source code</a>!'],
+    'help':[help],
+    'ineedhelp':[help],
+    'helpme':[help],
+    'howdoiusethis':[help],
+    'howamisupposedtousethis':[help],
   }
   for(var i = 0;i < Object.keys(replacements).length; i++) {
     var index = Object.keys(replacements)[i];
