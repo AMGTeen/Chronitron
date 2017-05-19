@@ -31,14 +31,14 @@ function parse(input) {
     'heya':['Hey','Hello','Yo','Hey!','Hello!','Yo!','Heya','Hey There','Heyyy','What\'s up?','Eyy','Ayy','Hello there!'],
     'hello there':['Hey','Hello','Yo','Hey!','Hello!','Yo!','Heya','Hey There','Heyyy','What\'s up?','Eyy','Ayy','Hello there!'],
     'hi':['Hey','Hello','Yo','Hey!','Hello!','Yo!','Heya','Hi!'],
-    'whats up':['Not much!','Just sitting here waiting for you to type something ;)','Haha not much','Talking to you! :)','THE SKY','The Sky ;)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
+    'whatsup':['Not much!','Just sitting here waiting for you to type something ;)','Haha not much','Talking to you! :)','THE SKY','The Sky ;)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
     'wassup':['Not much!','Just sitting here waiting for you to type something ;)','Haha not much','Talking to you! :)','THE SKY','The Sky ;)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
     'suh':['Just sitting here waiting for you to type something ;)','Suh to you bro','Haha not much','Talking to you! :)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
-    'how are you':['Fine!','Great!','Good.','Awesome!','OK'],
+    'howareyou':['Fine!','Great!','Good.','Awesome!','OK','Doing good, how about you?'],
     'whatsthetime':[getTime()],
     'whattimeisit':[getTime()],
     'whattime':[getTime()],
-    'time':[getTime()],
+    'time':[getTime()]
   }
   for(var i = 0;i < Object.keys(replacements).length; i++) {
     var index = Object.keys(replacements)[i];
