@@ -27,5 +27,14 @@ div.them {
   text-align: left;
 }
 div.history {
-  
+
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.1s linear;
+}
+a:hover {
+  border-bottom-color: black;
 }

@@ -42,6 +42,12 @@ function parse(input) {
     'cool':['👍'],
     'chronitron':['Did you say my name?','Yes?','Hello!','Did you say my name?','Cool name right 😏'],
     'heychronitron':['Yes?','Hello!'],
+    'guesswhat':['What!!','What?','I am litttterally on the edge of my seat','What is it?','Yes?'],
+    'help':['Need help? <a href="https://github.com/AMGTeen/Chronitron/blob/master/README.md#current-features">Click here</a> see what I can do. If you\'re a programmer, check out the <a href="https://raw.githubusercontent.com/AMGTeen/Chronitron/master/chronitron.js">source code</a>!'],
+    'ineedhelp':['Need help? <a href="https://github.com/AMGTeen/Chronitron/blob/master/README.md#current-features">Click here</a> see what I can do. If you\'re a programmer, check out the <a href="https://raw.githubusercontent.com/AMGTeen/Chronitron/master/chronitron.js">source code</a>!'],
+    'helpme':['Need help? <a href="https://github.com/AMGTeen/Chronitron/blob/master/README.md#current-features">Click here</a> see what I can do. If you\'re a programmer, check out the <a href="https://raw.githubusercontent.com/AMGTeen/Chronitron/master/chronitron.js">source code</a>!'],
+    'howdoiusethis':['Need help? <a href="https://github.com/AMGTeen/Chronitron/blob/master/README.md#current-features">Click here</a> see what I can do. If you\'re a programmer, check out the <a href="https://raw.githubusercontent.com/AMGTeen/Chronitron/master/chronitron.js">source code</a>!'],
+    'howamisupposedtousethis':['Need help? <a href="https://github.com/AMGTeen/Chronitron/blob/master/README.md#current-features">Click here</a> see what I can do. If you\'re a programmer, check out the <a href="https://raw.githubusercontent.com/AMGTeen/Chronitron/master/chronitron.js">source code</a>!'],
   }
   for(var i = 0;i < Object.keys(replacements).length; i++) {
     var index = Object.keys(replacements)[i];
