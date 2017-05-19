@@ -25,7 +25,7 @@ function parse(input) {
   text = text.replace(/[.,\ \'\/#!$%\^&\*;:{}?=\-_`~()]/g,"");
   var help = 'Need help? <a href="https://github.com/AMGTeen/Chronitron/blob/master/README.md#current-features">Click here</a> see what I can do. If you\'re a programmer, check out the <a href="https://raw.githubusercontent.com/AMGTeen/Chronitron/master/chronitron.js">source code</a>!',
   hey = ['Hey','Hello','Yo','Hey!','Hello!','Yo!','Heya','Hey There','Heyyy','What\'s up?','Eyy','Ayy','Hello there!'];
-
+  goodbye = ['Goodbye!','Bye!','See ya!','Adios!','Catch you later!'];
   var replacements = {
     'hello':hey,
     'hey':hey,
@@ -46,9 +46,17 @@ function parse(input) {
     'whattime':[getTime()],
     'time':[getTime()],
     'cool':['👍'],
-    'google':[window.open("http://google.com/index.html")],
+    'awesome':['👍'],
+    'goodbye':goodbye,
+    'bye':goodbye,
+    'seeya':goodbye,
+    'adios':goodbye,
+    'catchyoulater':goodbye,
     'chronitron':['Did you say my name?','Yes?','Hello!','Did you say my name?','Cool name right 😏'],
     'heychronitron':['Yes?','Hello!'],
+    'siri':['I know Siri.','Siri and I have a... strained... relationship.'],
+    'cortana':['The real one or the Halo one?','Cortana\'s a good friend of mine.','Cortana\'s my girlfriend. She doesn\'t know it, though.'],
+    'googlehome':['I know Google Home. She\'s nice.'],
     'guesswhat':['What!!','What?','I am litttterally on the edge of my seat','What is it?','Yes?'],
     'help':[help],
     'ineedhelp':[help],
