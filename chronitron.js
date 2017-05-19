@@ -23,7 +23,6 @@ function getTime() {
 function parse(input) {
   text = input.toLowerCase();
   text = text.replace(/[.,\ \'\/#!$%\^&\*;:{}?=\-_`~()]/g,"");
-
   var replacements = {
     'hello':['Hey','Hello','Yo','Hey!','Hello!','Yo!','Heya','Hey There','Heyyy','What\'s up?','Eyy','Ayy','Hello there!'],
     'hey':['Hey','Hello','Yo','Hey!','Hello!','Yo!','Heya','Hey There','Heyyy','What\'s up?','Eyy','Ayy','Hello there!'],
@@ -33,12 +32,16 @@ function parse(input) {
     'hi':['Hey','Hello','Yo','Hey!','Hello!','Yo!','Heya','Hi!'],
     'whatsup':['Not much!','Just sitting here waiting for you to type something ;)','Haha not much','Talking to you! :)','THE SKY','The Sky ;)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
     'wassup':['Not much!','Just sitting here waiting for you to type something ;)','Haha not much','Talking to you! :)','THE SKY','The Sky ;)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
-    'suh':['Just sitting here waiting for you to type something ;)','Suh to you bro','Haha not much','Talking to you! :)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
+    'suh':['Just sitting here waiting for you to type something 😉','Suh to you bro','Haha not much','Talking to you! :)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
+    'howareyou':['Fine!','Great!','Good.','Awesome!','OK','Doing good, how about you?'],
     'howareyou':['Fine!','Great!','Good.','Awesome!','OK','Doing good, how about you?'],
     'whatsthetime':[getTime()],
     'whattimeisit':[getTime()],
     'whattime':[getTime()],
-    'time':[getTime()]
+    'time':[getTime()],
+    'cool':['👍'],
+    'chronitron':['Did you say my name?','Yes?','Hello!','Did you say my name?','Cool name right 😏'],
+    'heychronitron':['Yes?','Hello!'],
   }
   for(var i = 0;i < Object.keys(replacements).length; i++) {
     var index = Object.keys(replacements)[i];
