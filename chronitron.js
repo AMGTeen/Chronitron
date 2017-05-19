@@ -34,6 +34,7 @@ function parse(input) {
     'whats up':['Not much!','Just sitting here waiting for you to type something ;)','Haha not much','Talking to you! :)','THE SKY','The Sky ;)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
     'wassup':['Not much!','Just sitting here waiting for you to type something ;)','Haha not much','Talking to you! :)','THE SKY','The Sky ;)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
     'suh':['Just sitting here waiting for you to type something ;)','Suh to you bro','Haha not much','Talking to you! :)','Haha hello!','Not much!','Not much :)','Not much, how about you?','Not much, how\'re you doing?'],
+    'how are you':['Fine!','Great!','Good.','Awesome!','OK'],
     'whatsthetime':[getTime()],
     'whattimeisit':[getTime()],
     'whattime':[getTime()],
